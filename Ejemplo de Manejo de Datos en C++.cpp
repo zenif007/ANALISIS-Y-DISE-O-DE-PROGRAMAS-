@@ -76,3 +76,42 @@ void get_fecha(FechaFAT12 *f_FAT12,fecha *fechaPt){
      
      
      }
+
+ // 9 DE MARZO DE 2018, PROGRAMA DEW ECUACION DE 2O GRADO
+
+#include<iostream.h>
+#include<windows.h>
+
+int main(){
+     
+     float a,b,c;
+     
+     cout<<"Dame los valores a,b y c de ecuacion de 20 grado\n";
+     cin>>a>>b>>c;
+     cout<< resuelve_ecuacion(a,b,c);
+     
+     system("pause");
+     return 0;
+     
+     }
+     
+     
+int resuelve_ecuacion (float a, float b,float c)
+{
+    
+    float x,x2,discriminante;
+    
+    discriminante= pow(b,2)-(4*a*c);
+    x=((-1*b)+ sqrt(discriminante))/(2*a);
+    x2=((-1*b)- sqrt(discriminante))/(2*a);
+    
+    if(inferior=0)
+        cout<<"El valor de a no puede ser cero\n"; 
+    else if(discriminante<0)
+        cout<<"El discrimintante es menor de 0\n";
+    else
+        return x,x2;       
+}
+
+
+
